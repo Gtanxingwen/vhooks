@@ -1,0 +1,52 @@
+{
+  "name": "vhooks",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build --mode development",
+    "serve": "vite preview",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs",
+    "test": "jest",
+    "lint": "eslint --fix --ext .js,.ts,.vue src packages __tests__"
+  },
+  "files": [
+    "dist",
+    "packages"
+  ],
+  "main": "./dist/vhooks.umd.js",
+  "module": "./dist/vhooks.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vhooks.es.js",
+      "require": "./dist/vhooks.umd.js"
+    }
+  },
+  "dependencies": {
+    "vue": "^3.0.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.2",
+    "@babel/preset-typescript": "^7.13.0",
+    "@types/jest": "^26.0.23",
+    "@types/node": "^15.0.2",
+    "@typescript-eslint/eslint-plugin": "^4.23.0",
+    "@typescript-eslint/parser": "^4.23.0",
+    "@vitejs/plugin-vue": "^1.2.2",
+    "@vue/compiler-sfc": "^3.0.5",
+    "babel-jest": "^27.0.1",
+    "eslint": "^7.26.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-vue": "^7.9.0",
+    "jest": "^27.0.1",
+    "prettier": "2.3.0",
+    "ts-jest": "^27.0.0",
+    "typescript": "^4.2.4",
+    "vite": "^2.3.0",
+    "vitepress": "^0.13.2",
+    "vue-tsc": "^0.0.24"
+  }
+}
