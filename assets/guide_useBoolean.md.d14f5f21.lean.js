@@ -1,1 +1,0 @@
-import{o as e,c as t,a}from"./app.cfeba50c.js";const o='{"title":"","description":"","frontmatter":{},"relativePath":"guide/useBoolean.md","lastUpdated":1622083201292}',r={},n=a("p",null,"'useBoolean'",-1);r.render=function(a,o,r,l,s,d){return e(),t("div",null,[n])};export default r;export{o as __pageData};
