@@ -1,0 +1,1 @@
+import{o as t,c as e}from"./app.cfeba50c.js";const r='{"title":"","description":"","frontmatter":{},"relativePath":"guide/useBoolean.md","lastUpdated":1621998836029}',a={};a.render=function(r,a,o,d,i,n){return t(),e("div")};export default a;export{r as __pageData};
