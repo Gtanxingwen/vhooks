@@ -9,7 +9,7 @@ module.exports = {
 	head: [['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }]],
 	base: '/vhooks/',
 	themeConfig: {
-		repo: 'vitejs/vite',
+		repo: 'Gtanxingwen/vhooks',
 		logo: '/logo.svg',
 		docsDir: 'docs',
 		docsBranch: 'main',
@@ -29,7 +29,7 @@ module.exports = {
 				items: [
 					{
 						text: 'Changelog',
-						link: 'https://github.com/vitejs/vite/blob/main/packages/vite/CHANGELOG.md'
+						link: 'https://github.com/Gtanxingwen/vhooks/CHANGELOG.md'
 					}
 				]
 			}

@@ -1,5 +1,5 @@
 ## 简介
-处理生产一个`debounce`过的代理新`function`
+为传入的`function`添加`debounce`处理，并提供`run`函数和`cancel`函数
 
 ## 代码演示
 #### 基本使用
