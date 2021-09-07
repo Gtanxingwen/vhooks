@@ -1,8 +1,8 @@
+const { resolve } = require('path')
 // @ts-check
 /**
  * @type {import('vitepress').UserConfig}
  */
-const { resolve } = require('path')
 module.exports = {
 	title: 'vhooks',
 	description: 'vue hooks based composition api',
@@ -70,6 +70,6 @@ module.exports = {
 	},
 	alias: {
 		'@packages': resolve(__dirname, '../../packages'),
-		'@components': resolve(__dirname, '../../src/components'),
+		'@compos': resolve(__dirname, '../../../src/components'),
 	}
 }

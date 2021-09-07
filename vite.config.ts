@@ -8,7 +8,8 @@ export default defineConfig({
   resolve: {
     alias: {
       '/dist': resolve(__dirname, 'dist'),
-      '@packages': resolve(__dirname, '/packages')
+      '@packages': resolve(__dirname, 'packages/'),
+      '@components': resolve(__dirname, 'src/components')
     }
   },
   build: {

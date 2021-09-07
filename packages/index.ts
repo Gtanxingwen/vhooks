@@ -1,4 +1,4 @@
-// import { useDebounceFn } from './useDebounceFn'
-//
-// export { useDebounceFn }
-export * from './useDebounceFn'
+import { useDebounceFn } from './useDebounceFn'
+
+export { useDebounceFn }
+// export * from './useDebounceFn'

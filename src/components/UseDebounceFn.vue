@@ -5,7 +5,7 @@
 
 <script lang="ts">
 import { ref, defineComponent } from 'vue'
-import { useDebounceFn } from '@packages'
+import { useDebounceFn } from '../../packages'
 
 export default defineComponent({
   name: 'UseDebounceFn',
