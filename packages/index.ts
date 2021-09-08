@@ -1,4 +1,5 @@
-import { useDebounceFn } from './useDebounceFn'
+import { useDebounceFn } from './fn/useDebounceFn'
+import { useEventListener } from './event/useEventListener'
 
-export { useDebounceFn }
+export { useDebounceFn, useEventListener }
 // export * from './useDebounceFn'

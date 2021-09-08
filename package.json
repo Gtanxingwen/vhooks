@@ -1,9 +1,10 @@
 {
-  "name": "vhooks",
-  "version": "0.0.0",
+  "name": "@ctan/vhooks",
+  "version": "0.0.1",
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build --mode development",
+    "build": "vue-tsc --noEmit && vite build",
     "serve": "vite preview",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
@@ -17,6 +18,7 @@
   ],
   "main": "./dist/vhooks.umd.js",
   "module": "./dist/vhooks.es.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/vhooks.es.js",
@@ -46,6 +48,7 @@
     "ts-jest": "^27.0.0",
     "typescript": "^4.2.4",
     "vite": "^2.5.3",
+    "vite-plugin-dts": "^0.7.0",
     "vitepress": "^0.17.0",
     "vue-tsc": "^0.3.0"
   }

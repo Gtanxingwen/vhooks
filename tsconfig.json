@@ -17,14 +17,5 @@
       "@packages": ["packages/"]
     }
   },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.d.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue",
-    "packages/**/*.ts",
-    "packages/**/*.d.ts",
-    "__tests__/**/*.d.ts"
-  ]
-//  "include": ["packages/**/*.ts", "packages/**/*.d.ts"]
+ "include": ["packages/**/*.ts", "packages/**/*.d.ts"]
 }
