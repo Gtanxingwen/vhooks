@@ -1,8 +1,8 @@
 import type { Ref } from 'vue'
 
 import { ref, onMounted, watch, onUnmounted } from 'vue'
-import { isWindow, isObject } from '../shared/utils/is'
-import { useThrottleFn } from '../fn/useThrottleFn'
+import { isWindow, isObject } from './shared/utils/is'
+import { useThrottleFn } from './useThrottleFn'
 
 type ReturnValue = {
   refX: Ref<number>

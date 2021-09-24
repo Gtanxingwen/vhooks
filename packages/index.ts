@@ -1,5 +1,7 @@
-import { useDebounceFn } from './fn/useDebounceFn'
-import { useEventListener } from './event/useEventListener'
+import { useDebounceFn } from './useDebounceFn'
+import { useEventListener } from './useEventListener'
+import { useThrottleFn } from './useThrottleFn'
+import { useScroll } from './useScroll'
 
-export { useDebounceFn, useEventListener }
+export { useDebounceFn, useEventListener, useThrottleFn, useScroll }
 // export * from './useDebounceFn'
