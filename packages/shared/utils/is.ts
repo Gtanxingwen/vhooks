@@ -12,7 +12,7 @@ export function isUnDef<T = unknown>(val?: T): val is T {
   return !isDef(val)
 }
 
-export function isObject(val: any): val is Record<any, any> {
+export function isObject(val: unknown): val is Record<any, any> {
   return val !== null && is(val, 'Object')
 }
 
@@ -77,10 +77,12 @@ export function isRegExp(val: unknown): val is RegExp {
   return is(val, 'RegExp')
 }
 
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export function isArray(val: any): val is Array<any> {
   return val && Array.isArray(val)
 }
 
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export function isWindow(val: any): val is Window {
   return typeof window !== 'undefined' && is(val, 'Window')
 }
@@ -95,6 +97,6 @@ export const isClient = !isServer
 
 export function isUrl(path: string): boolean {
   const reg =
-    /(((^https?:(?:\/\/)?)(?:[-;:&=\+\$,\w]+@)?[A-Za-z0-9.-]+(?::\d+)?|(?:www.|[-;:&=\+\$,\w]+@)[A-Za-z0-9.-]+)((?:\/[\+~%\/.\w-_]*)?\??(?:[-\+=&;%@.\w_]*)#?(?:[\w]*))?)$/
+    /(((^https?:(?:\/\/)?)(?:[-;:&=+$,\w]+@)?[A-Za-z0-9.-]+(?::\d+)?|(?:www.|[-;:&=+$,\w]+@)[A-Za-z0-9.-]+)((?:\/[+~%/.\w-_]*)?\??(?:[-+=&;%@.\w_]*)#?(?:[\w]*))?)$/
   return reg.test(path)
 }
