@@ -2,7 +2,15 @@ import { useDebounceFn } from './useDebounceFn'
 import { useEventListener } from './useEventListener'
 import { useThrottleFn } from './useThrottleFn'
 import { useScroll } from './useScroll'
-import { useCopy } from './useCopy'
+import { useCopyToClipboard } from './useCopyToClipboard'
+import { useScript } from './useScript'
 
-export { useDebounceFn, useEventListener, useThrottleFn, useScroll, useCopy }
+export {
+  useDebounceFn,
+  useEventListener,
+  useThrottleFn,
+  useScroll,
+  useCopyToClipboard,
+  useScript
+}
 // export * from './useDebounceFn'
