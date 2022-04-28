@@ -14,7 +14,8 @@
     "rootDir": "./",
     "baseUrl": "./",
     "paths": {
-      "@packages": ["packages/"]
+      "@packages": ["packages/"],
+      "@components": ["src/components/"]
     }
   },
  "include": ["packages/**/*.ts", "packages/**/*.d.ts"]

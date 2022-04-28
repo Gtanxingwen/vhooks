@@ -8,7 +8,10 @@
 
 #### 代码  
 
+::: details 查看代码
 <<< ./src/components/useDebounceFn.vue
+:::
+
 
 ## API
 ```ts
